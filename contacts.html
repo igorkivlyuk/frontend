@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+</head>
+<body>
+	<header>
+		<nav>
+		<a href="./index.html" title="CV">
+			CV
+		</a>
+		<a href="./contacts.html" title="Contacts">
+			Contacts
+		</a>	
+	</nav>
+	</header>
+	
+	<aside>
+		Menu
+	</aside>	
+	
+	
+	<form action="" method ="post">
+		<label for="name">Name</label>
+		<input type="text" value="example" id="name" placeholder="Name" disabled><br>
+		
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Name" value="Oleg" autofocus autocomplete size="20"><br>
+		
+		<label for="password">Password</label>
+		<input type="password" id="password" placeholder="Password" maxlength="5" required><br>
+		
+		<label>Sex:</label>
+		<select name="sex">
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+		<br>
+		
+		<input type="file" multiple><br>
+		
+		<input type="date">
+		
+		<fieldset>
+			<legend>Skills:</legend>
+			<label>
+				<input type="checkbox" name="skills" value="HTML"> HTML
+			</label>
+			<label>
+				<input type="checkbox" name="skills" value="CSS"> CSS
+			</label>
+			<label>
+				<input type="checkbox" name="skills" value="JavaScript"> JavaScript
+			</label>
+		</fieldset>	
+		
+		<fieldset>
+			<legend>City:</legend>
+			<label>
+				<input type="radio" name="city" value="Kiev"> Kiev
+			</label>	
+			<label>
+				<input type="radio" name="city" value="Kharkov"> Kharkov
+			</label>	
+			<label>
+				<input type="radio" name="city" value="Other"> Other
+			</label>	
+		</fieldset>
+		
+		<div>
+			<textarea cols="50" rows="6" placeholder="Description"></textarea>
+		</div>
+		<input type="submit" value="Send">
+	</form>
+		
+	<footer>
+		Vizitka 2018
+	</footer>
+</body>
+</html>
